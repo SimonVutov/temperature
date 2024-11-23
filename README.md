@@ -1,2 +1,2 @@
 # temperature-
-DHT22 and Nucleo-F446RE temperature reading
+DHT22 and Nucleo-F446RE temperature reading to UART Output

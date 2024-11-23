@@ -1,0 +1,53 @@
+/* USER CODE BEGIN Includes */
+#include <stdio.h>
+#include <string.h>
+#include "main.h"
+#include "DHT.h" // Include a library or define routines for DHT22
+/* USER CODE END Includes */
+
+/* USER CODE BEGIN PV */
+char uart_buf[100];       // Buffer for UART output
+uint8_t uart_buf_len;
+float temperature, humidity;
+/* USER CODE END PV */
+
+/* USER CODE BEGIN PFP */
+void Read_DHT22(void);
+/* USER CODE END PFP */
+
+/* USER CODE BEGIN 2 */
+// GPIO Pin for DHT22 data (adjust based on your wiring)
+#define DHT22_GPIO_PORT GPIOA
+#define DHT22_GPIO_PIN  GPIO_PIN_1
+/* USER CODE END 2 */
+
+int main(void) {
+    HAL_Init();
+    SystemClock_Config();
+    MX_GPIO_Init();
+    MX_USART2_UART_Init();
+
+    /* USER CODE BEGIN 2 */
+    uart_buf_len = sprintf(uart_buf, "DHT22 Sensor Test\r\n");
+    HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+    /* USER CODE END 2 */
+
+    while (1) {
+        /* USER CODE BEGIN WHILE */
+        Read_DHT22();
+        HAL_Delay(2000); // Read sensor every 2 seconds
+        /* USER CODE END WHILE */
+    }
+}
+
+void Read_DHT22(void) {
+    if (DHT22_ReadData(DHT22_GPIO_PORT, DHT22_GPIO_PIN, &temperature, &humidity) == 0) {
+        // Successfully read data
+        uart_buf_len = sprintf(uart_buf, "Temperature: %.2f°C, Humidity: %.2f%%\r\n", temperature, humidity);
+        HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+    } else {
+        // Error reading data
+        uart_buf_len = sprintf(uart_buf, "Failed to read from DHT22\r\n");
+        HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+    }
+}

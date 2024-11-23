@@ -1,0 +1,124 @@
+#include "main.h"
+#include <string.h>
+#include <stdio.h>
+
+/* Private define ------------------------------------------------------------*/
+#define DHT22_PIN GPIO_PIN_6 // Example pin
+#define DHT22_PORT GPIOA     // Example port
+
+/* Function Prototypes */
+void DHT22_Start(void);
+uint8_t DHT22_Check_Response(void);
+uint8_t DHT22_Read_Data(uint8_t *humidity, uint8_t *temperature);
+void Error_Handler(void);
+
+UART_HandleTypeDef huart2;
+
+int main(void)
+{
+    HAL_Init();
+    SystemClock_Config();
+    MX_GPIO_Init();
+    MX_USART2_UART_Init();
+
+    uint8_t humidity = 0, temperature = 0;
+    char uart_buffer[64];
+
+    while (1)
+    {
+        DHT22_Start();
+        if (DHT22_Check_Response())
+        {
+            if (DHT22_Read_Data(&humidity, &temperature))
+            {
+                sprintf(uart_buffer, "Temp: %d°C, Humidity: %d%%\r\n", temperature, humidity);
+                HAL_UART_Transmit(&huart2, (uint8_t *)uart_buffer, strlen(uart_buffer), HAL_MAX_DELAY);
+            }
+            else
+            {
+                sprintf(uart_buffer, "Checksum Error\r\n");
+                HAL_UART_Transmit(&huart2, (uint8_t *)uart_buffer, strlen(uart_buffer), HAL_MAX_DELAY);
+            }
+        }
+        else
+        {
+            sprintf(uart_buffer, "No Response from DHT22\r\n");
+            HAL_UART_Transmit(&huart2, (uint8_t *)uart_buffer, strlen(uart_buffer), HAL_MAX_DELAY);
+        }
+
+        HAL_Delay(2000); // Wait 2 seconds between readings
+    }
+}
+
+void DHT22_Start(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+    // Configure pin as output
+    GPIO_InitStruct.Pin = DHT22_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(DHT22_PORT, &GPIO_InitStruct);
+
+    HAL_GPIO_WritePin(DHT22_PORT, DHT22_PIN, GPIO_PIN_RESET); // Pull pin low
+    HAL_Delay(18); // Wait at least 18ms
+    HAL_GPIO_WritePin(DHT22_PORT, DHT22_PIN, GPIO_PIN_SET);   // Pull pin high
+    HAL_Delay(20); // Wait for 20-40 microseconds
+
+    // Configure pin as input
+    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+    HAL_GPIO_Init(DHT22_PORT, &GPIO_InitStruct);
+}
+
+uint8_t DHT22_Check_Response(void)
+{
+    uint32_t timeout = 10000; // Timeout for response
+    while (HAL_GPIO_ReadPin(DHT22_PORT, DHT22_PIN) && timeout--); // Wait for pin to go low
+    if (!timeout) return 0;
+
+    timeout = 10000;
+    while (!HAL_GPIO_ReadPin(DHT22_PORT, DHT22_PIN) && timeout--); // Wait for pin to go high
+    if (!timeout) return 0;
+
+    timeout = 10000;
+    while (HAL_GPIO_ReadPin(DHT22_PORT, DHT22_PIN) && timeout--); // Wait for pin to go low again
+    if (!timeout) return 0;
+
+    return 1; // Response received
+}
+
+uint8_t DHT22_Read_Data(uint8_t *humidity, uint8_t *temperature)
+{
+    uint8_t data[5] = {0};
+    uint32_t timeout;
+    uint8_t bit_index = 0, byte_index = 0;
+
+    for (int i = 0; i < 40; i++)
+    {
+        timeout = 10000;
+        while (!HAL_GPIO_ReadPin(DHT22_PORT, DHT22_PIN) && timeout--); // Wait for pin to go high
+        if (!timeout) return 0;
+
+        HAL_Delay(1); // Wait for ~28us (threshold to detect high/low bit)
+
+        if (HAL_GPIO_ReadPin(DHT22_PORT, DHT22_PIN))
+        {
+            data[byte_index] |= (1 << (7 - bit_index)); // Write '1'
+            timeout = 10000;
+            while (HAL_GPIO_ReadPin(DHT22_PORT, DHT22_PIN) && timeout--); // Wait for pin to go low
+            if (!timeout) return 0;
+        }
+
+        if (++bit_index == 8) // Move to the next byte
+        {
+            bit_index = 0;
+            byte_index++;
+        }
+    }
+
+    *humidity = data[0];
+    *temperature = data[2];
+    uint8_t checksum = data[0] + data[1] + data[2] + data[3];
+    return checksum == data[4]; // Verify checksum
+}

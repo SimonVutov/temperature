@@ -1,0 +1,6 @@
+../Core/Src/main.c:77:5:main	2
+../Core/Src/main.c:113:5:DHT22_ReadTemperature	13
+../Core/Src/main.c:183:6:SystemClock_Config	3
+../Core/Src/main.c:224:13:MX_GPIO_Init	1
+../Core/Src/main.c:246:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:264:6:Error_Handler	1

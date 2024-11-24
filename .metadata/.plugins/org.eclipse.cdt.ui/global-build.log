@@ -168,3 +168,442 @@ arm-none-eabi-size  temp.elf
   14388	     92	   2084	  16564	   40b4	temp.elf
 Finished building: default.size.stdout
  
+18:27:36 **** Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f446retx.d" -MT"Core/Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f446retx.o" "../Core/Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  14388	     92	   2084	  16564	   40b4	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+18:35:12 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-size  temp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14388	     92	   2084	  16564	   40b4	temp.elf
+Finished building: default.size.stdout
+ 
+18:36:53 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-size  temp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14388	     92	   2084	  16564	   40b4	temp.elf
+Finished building: default.size.stdout
+ 
+18:39:23 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  14564	     92	   2084	  16740	   4164	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+18:40:19 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-size  temp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14564	     92	   2084	  16740	   4164	temp.elf
+Finished building: default.size.stdout
+ 
+18:44:43 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `SystemClock_Config':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:226: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:238: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `MX_USART2_UART_Init':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:279: undefined reference to `Error_Handler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:44:52 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `SystemClock_Config':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:226: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:238: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `MX_USART2_UART_Init':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:279: undefined reference to `Error_Handler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:47:00 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'SystemClock_Config':
+../Core/Src/main.c:223:24: error: 'RCC_PLLInitTypeDef' has no member named 'Q'
+  223 |   RCC_OscInitStruct.PLL.Q = 2;
+      |                        ^
+../Core/Src/main.c:224:24: error: 'RCC_PLLInitTypeDef' has no member named 'R'
+  224 |   RCC_OscInitStruct.PLL.R = 2;
+      |                        ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:61:13: warning: 'MX_GPIO_Init' used but never defined
+   61 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_USART2_UART_Init' used but never defined
+   62 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:47:20 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `SystemClock_Config':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:226: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:238: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `MX_USART2_UART_Init':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:279: undefined reference to `Error_Handler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:47:46 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `SystemClock_Config':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:226: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:238: undefined reference to `Error_Handler'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `MX_USART2_UART_Init':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:279: undefined reference to `Error_Handler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:48:01 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  14564	     92	   2084	  16740	   4164	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+18:48:30 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  14564	     92	   2084	  16740	   4164	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+18:52:01 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:14:1: error: unknown type name 'UART_HandleTypeDef'
+   14 | UART_HandleTypeDef huart2;
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:18:1: error: unknown type name 'uint8_t'
+   18 | uint8_t uart_buf_len;
+      | ^~~~~~~
+../Core/Src/main.c:1:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /* USER CODE BEGIN PD */
+../Core/Src/main.c:20:1: error: unknown type name 'uint32_t'
+   20 | uint32_t error_count = 0;
+      | ^~~~~~~~
+../Core/Src/main.c:20:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/main.c:21:1: error: unknown type name 'uint32_t'
+   21 | uint32_t success_count = 0;
+      | ^~~~~~~~
+../Core/Src/main.c:21:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:28:3: warning: implicit declaration of function 'HAL_Init' [-Wimplicit-function-declaration]
+   28 |   HAL_Init();
+      |   ^~~~~~~~
+../Core/Src/main.c:31:3: warning: implicit declaration of function 'SystemClock_Config' [-Wimplicit-function-declaration]
+   31 |   SystemClock_Config();
+      |   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:34:3: warning: implicit declaration of function 'MX_GPIO_Init' [-Wimplicit-function-declaration]
+   34 |   MX_GPIO_Init();
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c:35:3: warning: implicit declaration of function 'MX_USART2_UART_Init' [-Wimplicit-function-declaration]
+   35 |   MX_USART2_UART_Init();
+      |   ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:36:3: warning: implicit declaration of function 'DWT_Delay_Init' [-Wimplicit-function-declaration]
+   36 |   DWT_Delay_Init();
+      |   ^~~~~~~~~~~~~~
+../Core/Src/main.c:39:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   39 |   uart_buf_len = sprintf(uart_buf, "DHT22 Temperature Reader Started\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:1:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+  +++ |+#include <stdio.h>
+    1 | /* USER CODE BEGIN PD */
+../Core/Src/main.c:39:18: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   39 |   uart_buf_len = sprintf(uart_buf, "DHT22 Temperature Reader Started\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:39:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:40:3: warning: implicit declaration of function 'HAL_UART_Transmit' [-Wimplicit-function-declaration]
+   40 |   HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:40:31: error: 'uint8_t' undeclared (first use in this function)
+   40 |   HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                               ^~~~~~~
+../Core/Src/main.c:40:31: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/main.c:40:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:40:40: error: expected expression before ')' token
+   40 |   HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                                        ^
+../Core/Src/main.c:49:9: warning: implicit declaration of function 'HAL_Delay' [-Wimplicit-function-declaration]
+   49 |         HAL_Delay(1000); // Wait between attempts
+      |         ^~~~~~~~~
+../Core/Src/main.c:51:21: warning: implicit declaration of function 'DHT22_ReadTemperature' [-Wimplicit-function-declaration]
+   51 |       read_result = DHT22_ReadTemperature(DHT22_GPIO_PORT, DHT22_GPIO_PIN, &temperature);
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:3:25: error: 'GPIOA' undeclared (first use in this function)
+    3 | #define DHT22_GPIO_PORT GPIOA
+      |                         ^~~~~
+../Core/Src/main.c:51:43: note: in expansion of macro 'DHT22_GPIO_PORT'
+   51 |       read_result = DHT22_ReadTemperature(DHT22_GPIO_PORT, DHT22_GPIO_PIN, &temperature);
+      |                                           ^~~~~~~~~~~~~~~
+../Core/Src/main.c:4:24: error: 'GPIO_PIN_1' undeclared (first use in this function)
+    4 | #define DHT22_GPIO_PIN GPIO_PIN_1
+      |                        ^~~~~~~~~~
+../Core/Src/main.c:51:60: note: in expansion of macro 'DHT22_GPIO_PIN'
+   51 |       read_result = DHT22_ReadTemperature(DHT22_GPIO_PORT, DHT22_GPIO_PIN, &temperature);
+      |                                                            ^~~~~~~~~~~~~~
+../Core/Src/main.c:56:64: warning: format '%lu' expects argument of type 'long unsigned int', but argument 4 has type 'int' [-Wformat=]
+   56 |       uart_buf_len = sprintf(uart_buf, "[OK] Temp: %.1f°C (S:%lu E:%lu)\r\n",
+      |                                                              ~~^
+      |                                                                |
+      |                                                                long unsigned int
+      |                                                              %u
+   57 |                             temperature, success_count, error_count);
+      |                                          ~~~~~~~~~~~~~          
+      |                                          |
+      |                                          int
+../Core/Src/main.c:56:70: warning: format '%lu' expects argument of type 'long unsigned int', but argument 5 has type 'int' [-Wformat=]
+   56 |       uart_buf_len = sprintf(uart_buf, "[OK] Temp: %.1f°C (S:%lu E:%lu)\r\n",
+      |                                                                    ~~^
+      |                                                                      |
+      |                                                                      long unsigned int
+      |                                                                    %u
+   57 |                             temperature, success_count, error_count);
+      |                                                         ~~~~~~~~~~~   
+      |                                                         |
+      |                                                         int
+../Core/Src/main.c:60:64: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'int' [-Wformat=]
+   60 |       uart_buf_len = sprintf(uart_buf, "[ERR] Read failed (S:%lu E:%lu)\r\n",
+      |                                                              ~~^
+      |                                                                |
+      |                                                                long unsigned int
+      |                                                              %u
+   61 |                             success_count, error_count);
+      |                             ~~~~~~~~~~~~~                       
+      |                             |
+      |                             int
+../Core/Src/main.c:60:70: warning: format '%lu' expects argument of type 'long unsigned int', but argument 4 has type 'int' [-Wformat=]
+   60 |       uart_buf_len = sprintf(uart_buf, "[ERR] Read failed (S:%lu E:%lu)\r\n",
+      |                                                                    ~~^
+      |                                                                      |
+      |                                                                      long unsigned int
+      |                                                                    %u
+   61 |                             success_count, error_count);
+      |                                            ~~~~~~~~~~~                
+      |                                            |
+      |                                            int
+../Core/Src/main.c:64:42: error: expected expression before ')' token
+   64 |     HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                                          ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:71:27: error: unknown type name 'GPIO_TypeDef'
+   71 | int DHT22_ReadTemperature(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, float *temperature) {
+      |                           ^~~~~~~~~~~~
+../Core/Src/main.c:71:48: error: unknown type name 'uint16_t'
+   71 | int DHT22_ReadTemperature(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, float *temperature) {
+      |                                                ^~~~~~~~
+../Core/Src/main.c:71:48: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:53:38 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:45:13: warning: 'MX_GPIO_Init' used but never defined
+   45 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:46:13: warning: 'MX_USART2_UART_Init' used but never defined
+   46 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:57: undefined reference to `SystemClock_Config'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:60: undefined reference to `MX_GPIO_Init'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:61: undefined reference to `MX_USART2_UART_Init'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:62: undefined reference to `DWT_Delay_Init'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `DHT22_ReadTemperature':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:111: undefined reference to `DWT_Delay_us'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:115: undefined reference to `DWT_Delay_us'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:125: undefined reference to `DWT_Delay_us'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:132: undefined reference to `DWT_Delay_us'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:139: undefined reference to `DWT_Delay_us'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:148: more undefined references to `DWT_Delay_us' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:57:45 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  14564	     92	   2084	  16740	   4164	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+18:58:14 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-size  temp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14564	     92	   2084	  16740	   4164	temp.elf
+Finished building: default.size.stdout
+ 
+18:59:01 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  14388	     92	   2084	  16564	   40b4	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+19:03:04 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  15468	     92	   2084	  17644	   44ec	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+19:07:47 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:61:13: warning: 'MX_GPIO_Init' used but never defined
+   61 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_USART2_UART_Init' used but never defined
+   62 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:84: undefined reference to `SystemClock_Config'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:87: undefined reference to `MX_GPIO_Init'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:88: undefined reference to `MX_USART2_UART_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:07:53 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:61:13: warning: 'MX_GPIO_Init' used but never defined
+   61 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_USART2_UART_Init' used but never defined
+   62 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:84: undefined reference to `SystemClock_Config'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:87: undefined reference to `MX_GPIO_Init'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:88: undefined reference to `MX_USART2_UART_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:09:12 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:61:13: warning: 'MX_GPIO_Init' used but never defined
+   61 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_USART2_UART_Init' used but never defined
+   62 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:84: undefined reference to `SystemClock_Config'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:87: undefined reference to `MX_GPIO_Init'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/simeo/OneDrive/Desktop/temperature/temp/Debug/../Core/Src/main.c:88: undefined reference to `MX_USART2_UART_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: temp.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:09:46 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp.elf
+ 
+arm-none-eabi-size  temp.elf 
+arm-none-eabi-objdump -h -S temp.elf  > "temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  15468	     92	   2084	  17644	   44ec	temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: temp.list
+ 
+19:11:17 **** Incremental Build of configuration Debug for project temp ****
+make -j16 all 
+arm-none-eabi-size  temp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15468	     92	   2084	  17644	   44ec	temp.elf
+Finished building: default.size.stdout
+ 

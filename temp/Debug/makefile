@@ -60,8 +60,8 @@ all: main-build
 main-build: temp.elf secondary-outputs
 
 # Tool invocations
-temp.elf temp.map: $(OBJS) $(USER_OBJS) C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "temp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Desktop\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+temp.elf temp.map: $(OBJS) $(USER_OBJS) C:\Users\simeo\OneDrive\Documents\GitHub\temperature\temp\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "temp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\simeo\OneDrive\Documents\GitHub\temperature\temp\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
